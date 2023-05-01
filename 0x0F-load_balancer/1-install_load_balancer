@@ -12,8 +12,8 @@ frontend nimasolutions.tech
         default_backend web_servers
 backend web_servers
         balance roundrobin
-        server 64820-web-01 54.236.45.28
-        server 64820-web-02 52.3.241.77
+        server 174930-web-01 18.207.235.25
+        server 174930-web-02 3.85.196.208
 ' >> /etc/haproxy/haproxy.cfg
 
 # Restart HAproxy service
