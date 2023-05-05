@@ -10,7 +10,7 @@ defaults
 frontend www-http
         bind *:80
 # ADD new bund to port 443
-        bind *:443 ssl crt /etc/ssl/www.jesulayomy.tech.pem
+        bind *:443 ssl crt /etc/ssl/www.josephani.tech
         http-request set-header X-Forwarded-Proto https
 
 # ADD to create cert with its own port
@@ -23,8 +23,8 @@ frontend www-http
 backend www-backend
         balance roundrobin
 #       redirect scheme https if !{ ssl_fc }
-        server 182159-web-01 18.234.106.179:80 check
-        server 182159-web-02 34.207.83.122:80 check
+        server 174930-web-01 100.25.110.183 check
+        server 174930-web-02 3.85.196.208 check
 
 # ADD to create cert with its own port
 backend letsencrypt-backend
