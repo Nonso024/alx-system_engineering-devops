@@ -1,1 +1,1 @@
-Task 0.Where am I?
+Solution to tasks on mysql
